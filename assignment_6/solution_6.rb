@@ -33,7 +33,7 @@ puts 36.class
 # Create an Array literal and output it's class (one line)
 puts ["Ahmad", "Nurdin", "Hutasuhut"].class
 # Create a Hash literal and output it's class (one line). Note to keep from confusing Ruby you'll have to wrap what you are outputting in parenthesis
-puts hsh = {names => age}.class
+puts ({"names" => 234}.class)
 # Create a symbol and output it's class
 puts :"My name is Ahmad".class
 # Create a String constant with any name you choose

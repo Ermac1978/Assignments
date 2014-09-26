@@ -21,13 +21,12 @@ end
 
 puts "UNTIL Loop"
 x = 1
-until x >= num
+until x > num
   puts x
   x += 1
 end
 
 puts "FOR I IN Loop"
-x = 1
 for x in 1..num
    puts x
    x += 1
@@ -56,7 +55,6 @@ begin
 end until x > num
 
 puts "RANGE Loop"
-x = 1
 (1..num).each do  |x|
   puts x
   x += 1

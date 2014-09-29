@@ -41,10 +41,9 @@ loop do
 end
 
 puts ".TIMES Loop"
-x = 1
-num.times do
-  puts x
+num.times do |x|
   x += 1
+  puts x
 end
 
 puts "BEGIN UNTIL Loop"
@@ -55,7 +54,6 @@ begin
 end until x > num
 
 puts "RANGE Loop"
-(1..num).each do  |x|
+(1..num).each do |x|
   puts x
-  x += 1
 end

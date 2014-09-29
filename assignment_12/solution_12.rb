@@ -12,7 +12,6 @@ questions_array = ["Enter your name? ",
                    "Enter your gender? ",
                    "What planet are you from? "]
 
-# Using Loop loop because it is an infinite loop
 which_question = 0
 
 # Using Loop loop because it is an infinite loop
@@ -20,7 +19,7 @@ which_question = 0
     print questions_array[which_question]
     answer = $stdin.gets.chomp
     break if answer.size == 0
-    puts which_question
+#    puts which_question
     if which_question >= questions_array.size - 1
       which_question = 0
     else

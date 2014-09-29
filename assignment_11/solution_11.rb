@@ -29,7 +29,6 @@ end
 puts "FOR I IN Loop"
 for x in 1..num
    puts x
-   x += 1
 end
 
 puts "LOOP Loop"

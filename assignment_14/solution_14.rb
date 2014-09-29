@@ -9,10 +9,11 @@ def starts_with_vowel(text)
   else
     return false
 end
-puts starts_with_vowel.class
+
 
 def pigatize(text)
   if starts_with_vowel(text)
+    pigatized_text = text + "way"
   else
   end
   return pigatized_text

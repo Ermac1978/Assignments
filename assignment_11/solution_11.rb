@@ -41,8 +41,7 @@ end
 
 puts ".TIMES Loop"
 num.times do |x|
-  x += 1
-  puts x
+  puts x + 1
 end
 
 puts "BEGIN UNTIL Loop"

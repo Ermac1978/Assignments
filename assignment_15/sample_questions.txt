@@ -1,0 +1,4 @@
+Enter your name?
+Enter your species?
+Enter your gender?
+What planet are you from?

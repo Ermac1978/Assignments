@@ -7,6 +7,11 @@
 file = File.new('sample_questions.txt')
 questions = file.readlines
 
+#  Enter your name?
+#  Enter your species?
+#  Enter your gender?
+#  What planet are you from?
+
 questions.each do |question|
   print question
   answer = gets.chomp

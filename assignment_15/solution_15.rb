@@ -6,7 +6,7 @@
 
 file = File.new('sample_questions.txt')
 questions = file.readlines
-puts questions.class
+
 #  Enter your name?
 #  Enter your species?
 #  Enter your gender?
@@ -14,6 +14,5 @@ puts questions.class
 
 questions.each do |question|
   print question
-  puts question.class
   answer = gets.chomp
 end

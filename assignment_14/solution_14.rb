@@ -4,10 +4,11 @@
 # If the first letter is a consonant, move it to the end and add "ay"
 
 def starts_with_vowel(text)
-  if text [0] = /[aeiou]/
+  if text [0] = /[aeiou]/i
     return true
   else
     return false
+  end
 end
 
 
@@ -18,7 +19,6 @@ def pigatize(text)
   end
   return pigatized_text
 end
-
 
 
 loop do

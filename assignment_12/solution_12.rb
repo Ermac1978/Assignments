@@ -5,6 +5,7 @@
 # When you run out of questions, start over
 # For extra credit: Save all the answers with the questions, and print a summary at the end
 
+<<<<<<< HEAD
 
 
 questions_array = ["Enter your name? ",
@@ -25,4 +26,18 @@ which_question = 0
     else
       which_question += 1
     end
+=======
+questions = ["What's your favorite color?", "What's your favorite genre?", "What's your favorite letter?"]
+
+
+count_this = 0
+
+  questions.each do |question|
+    puts "#{question}"
+    user_answer = $stdin.gets.chomp
+    count_this += 1
+    puts "Press ENTER to END"
+  break if user_answer.length == 0
+
+>>>>>>> upstream/master
 end

@@ -1,9 +1,4 @@
-# Ignore the solutions directory #
-##################################
-solutions
 
-# Compiled source #
-###################
 *.com
 *.class
 *.dll

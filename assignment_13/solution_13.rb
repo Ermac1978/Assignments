@@ -13,11 +13,11 @@ loop do
   guess_num = $stdin.gets.chomp
   break if guess_num.to_i == random_num
   if guess_num.to_i < random_num
-    print "Please provide a higher number: "
+    puts "Please provide a higher number. "
 #    guess_num = $stdin.gets.chomp
 #    break if guess_num.to_i == random_num
   else
-    print "Please provide a lower number: "
+    puts "Please provide a lower number. "
 #    guess_num = $stdin.gets.chomp
 #    break if guess_num.to_i == random_num
 

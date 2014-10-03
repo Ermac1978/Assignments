@@ -14,13 +14,13 @@ questions_array = ["Enter your name? ",
 which_question = 0
 
 # Using Loop loop because it is an infinite loop
-  loop do
-    print questions_array[which_question]
-    answer = $stdin.gets.chomp
-    break if answer.size == 0
-#    puts which_question
+loop do
+  print questions_array[which_question]
+  answer = $stdin.gets.chomp
+  break if answer.size == 0
     if which_question >= questions_array.size - 1
       which_question = 0
     else
       which_question += 1
     end
+end

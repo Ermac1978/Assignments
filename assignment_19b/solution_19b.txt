@@ -9,11 +9,11 @@ Answer the following questions using the code shown in this gist: https://gist.g
 2. What type of scope is the variable on line 2? Class variable scope. This class variable @@team_count is a counter starting at 0.
 
 3. Explain the difference between the three attr_ methods on lines 4, 5, and 6.
-  attr_accessor - creates an Instance method that can read and write the Instance variable @name (also known as an accessor method)
+  attr_accessor - creates 2 Instance methods, one that can read and one that can write the Instance variable @name (also known as an accessor method)
   attr_reader - creates a Instance method that can only read and return an Instance variable @city
   attr_writer - creates a method that can only write to an an instance variable @state
 
-4. On line 8, what is defined? a Class method named "initialize" that sets the parameters of the object when its created
+4. On line 8, what is defined? an Instance method named "initialize" that sets the parameters of the object when its created
 
 5. What is the purpose of line 9? @@team_count is a Class variable that acts as a counter that increments by 1.
 
@@ -23,24 +23,24 @@ Answer the following questions using the code shown in this gist: https://gist.g
 
 8. What is line 21 doing? This line is invoking a Private method named "set_the_city". That method is defined from line 27-line 32.
 
-9. What is the purpose of line 25? "private" means that the method cannot be used/called by any outside object. It can only be used within the confines of whatever
+9. What is the purpose of line 25? "private" means that the method cannot be used/called by any outside object. It can only be used within the confines of whatever block the method happens to be in.
 
 10. What code can call the method defined on line 27? line 21
 
 In the following code, how many objects are created and what are their types?
 
-11. 2 objects
+11. 2 objects, File object and String object.
 
     file = File.new('content.txt')
     content = file.read
 
 
-12. 1 object
+12. 1 object, String object
 
     file = File.read('content.txt')
 
 
-13.  1 object
+13.  1 object, 1 User object, and 2 String objects.
 
     user = User.new
     user.name = 'Me'

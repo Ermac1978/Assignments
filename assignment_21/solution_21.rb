@@ -42,7 +42,6 @@ class Person
   end
 
   def age
-    print "When is your birthday (enter in order YYYY-MM-DD)? "
     @bday = Date.parse($stdin.gets.chomp)
     calculateAge
   end
@@ -59,7 +58,8 @@ loop do
   print "What is your name? (enter \"q\" to quit) "
   user_name = gets.chomp
   break if user_name == "q"
-  user.name(user_name)
+  print "When is your birthday (enter in order YYYY-MM-DD)? "
   user_age = user.age
+  user.name(user_name)
   puts "Your name is #{user_name}. You are user number #{Person.number_of_users} and your age is #{user_age}."
 end

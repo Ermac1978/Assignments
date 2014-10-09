@@ -23,6 +23,6 @@ class String
   end
 
   def starts_with_vowel(first_letter)
-    return ["a", "e", "i", "o", "u"].include?(first_letter)
+    return ["a", "e", "i", "o", "u"].include?(first_letter.downcase)
   end
 end

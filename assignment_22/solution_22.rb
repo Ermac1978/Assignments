@@ -27,9 +27,9 @@ class Invoice
   attr_accessor :tax_percentage
   attr_accessor :items
 
-  def items_total_amount
-    @items.reject {|item| item.quantity == 0}
-    invoice_items_array = @items.sum {|item| (item.sale_price * item.quantity)}
+  def Invoice.items_total_amount(items)
+    items.reject! {|item| item.quantity == 0}
+    invoice_items_array = items.sum {|item| (item.sale_price * item.quantity)}
   end
 
   def items_total_qty
@@ -61,7 +61,7 @@ invoice.items.each do |invoice_item|
 puts "Product name: #{invoice_item.product_name}\t\tSale Price: \$#{invoice_item.sale_price}\t\tQty: #{invoice_item.quantity}"
 end
 
-invoice_total = invoice.items_total_amount
+invoice_total = Invoice.items_total_amount(invoice_total)
 invoice_total2 = invoice.items_total_qty
 puts "Sub-total: #{invoice_total.round(2)}"
 puts "Tax: #{(invoice.tax_percentage * invoice_total).round(2)}"

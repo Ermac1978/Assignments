@@ -61,5 +61,5 @@ loop do
   print "When is your birthday (enter in order YYYY-MM-DD)? "
   user_age = user.age
   user.name(user_name)
-  puts "Your name is #{user_name}. You are user number #{Person.number_of_users} and your age is #{user_age}."
+  puts "Your name is #{user.first_name} #{user.last_name}. You are user number #{Person.number_of_users} and your age is #{user_age}."
 end

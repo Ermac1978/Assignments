@@ -15,5 +15,4 @@ movie_title = gets.chomp
 uri = URI('http://www.myapifilms.com/imdb' + "?title=#{URI.escape(movie_title)}")
 movie_plot = Net::HTTP.get(uri)
 plot = JSON.parse(movie_plot)
-
 puts plot[0]["plot"]

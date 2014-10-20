@@ -4,6 +4,10 @@
 * you will need to add a Procfile (included in this folder)
 * you will need to add the following to your Gemfile (please read the comments to remind yourself why each Gem is necessary):
 
+http://evening-headland-8856.herokuapp.com/
+
+https://github.com/Ermac1978/Query_Movie_App
+
 
 ```ruby
 # User the 'thin' server instead of the default webrick

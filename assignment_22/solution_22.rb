@@ -61,7 +61,7 @@ invoice.items.each do |invoice_item|
 puts "Product name: #{invoice_item.product_name}\t\tSale Price: \$#{invoice_item.sale_price}\t\tQty: #{invoice_item.quantity}"
 end
 
-invoice_total = Invoice.items_total_amount(invoice_total)
+invoice_total = Invoice.items_total_amount(invoice.items)
 invoice_total2 = invoice.items_total_qty
 puts "Sub-total: #{invoice_total.round(2)}"
 puts "Tax: #{(invoice.tax_percentage * invoice_total).round(2)}"

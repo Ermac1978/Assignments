@@ -27,6 +27,10 @@ class Invoice
   attr_accessor :tax_percentage
   attr_accessor :items
 
+  def initialize
+    @items = Array.new
+  end
+
   def Invoice.items_total_amount(items)
     items.reject! {|item| item.quantity == 0}
     invoice_items_array = items.sum {|item| (item.sale_price * item.quantity)}
@@ -40,7 +44,7 @@ class Invoice
 end
 
 invoice = Invoice.new
-invoice.items = Array.new
+#invoice.items = Array.new
 
 loop do
   invoice_item = InvoiceItem.new
